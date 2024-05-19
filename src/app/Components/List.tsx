@@ -24,7 +24,7 @@ const List = () => {
         }
     }
 
-    const deleteTopic =async(id)=>{
+    const deleteTopic =async(id: string)=>{
 
         const confirmed = confirm('are you sure you want to delete')
         if(confirmed){

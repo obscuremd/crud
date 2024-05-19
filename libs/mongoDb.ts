@@ -1,6 +1,8 @@
 import mongoose from 'mongoose'
 
-const mongoUrl = "mongodb+srv://mderhenede:Rukki_1357@cluster0.qsd2cin.mongodb.net/NextJsCRUD"
+
+
+const mongoUrl = process.env.MONGO_URL as string
 
 export const connectMongoDb =async()=>{
     try {
